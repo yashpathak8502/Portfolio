@@ -207,7 +207,7 @@ polyline {
   top: 0%;
   z-index: 3;
   border-radius: 30px;
-  background-image: url(/cre-po-bw.png);
+  background-image: url(cre-po-bw.png);
   background-position: center;
   background-size: cover;
   transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
@@ -222,7 +222,7 @@ polyline {
   top: 5%;
   z-index: 4;
   border-radius: 30px;
-  background-image: url(/Screenshot\ \(561\).png);
+  background-image: url(Screenshot\ \(561\).png);
   background-position: center;
   background-size: cover;
   transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
@@ -237,23 +237,23 @@ polyline {
   top: 10%;
   z-index: 5;
   border-radius: 30px;
-  background-image: url(/form-bw.png);
+  background-image: url(form-bw.png);
   background-position: center;
   background-size: cover;
   transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #card3:hover {
-  background-image: url(/form.png);
+  background-image: url(form.png);
   background-position: center;
   background-size: cover;
 }
 #card2:hover {
-  background-image: url(/Screenshot\ \(561\)-b.png);
+  background-image: url(Screenshot\ \(561\)-b.png);
   background-position: center;
   background-size: cover;
 }
 #card1:hover {
-  background-image: url(/cre-po-.png);
+  background-image: url(cre-po-.png);
   background-position: center;
   background-size: cover;
 }
@@ -858,7 +858,7 @@ polyline {
     top: 48%;
     z-index: 3;
     border-radius: 30px;
-    background-image: url(/breech.png);
+    background-image: url(cre-po-bw.png);
     background-position: center;
     background-size: cover;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
@@ -873,7 +873,7 @@ polyline {
     top: 48%;
     z-index: 4;
     border-radius: 30px;
-    background-image: url(/kj.jpeg);
+    background-image: url(Screenshot\ \(561\).png);
     background-position: center;
     background-size: cover;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
@@ -888,23 +888,23 @@ polyline {
     top: 48%;
     z-index: 5;
     border-radius: 30px;
-    background-image: url(/form-bw.png);
+    background-image: url(form-bw.png);
     background-position: center;
     background-size: cover;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
   }
   #card3:hover {
-    background-image: url(/form.png);
+    background-image: url(form.png);
     background-position: center;
     background-size: cover;
   }
   #card2:hover {
-    background-image: url(/kjbandw.jpeg);
+    background-image: url(Screenshot\ \(561\)-b.png);
     background-position: center;
     background-size: cover;
   }
   #card1:hover {
-    background-image: url(/kjbandw.jpeg);
+    background-image: url(cre-po-.png);
     background-position: center;
     background-size: cover;
   }
