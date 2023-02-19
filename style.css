@@ -1,0 +1,1115 @@
+/* font-family: 'Mr Dafoe', cursive;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
+  
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #dadada;
+}
+#loading {
+  width: 100%;
+  height: 100%;
+}
+#l1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+}
+#l1 h1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 4vw;
+  font-family: gilroy;
+  font-weight: 500;
+}
+#l1 h1 span {
+  color: rgb(255, 255, 255);
+}
+#l1 h1 #pathak {
+  font-family: "Mr Dafoe", cursive;
+  color: rgb(0, 208, 255);
+}
+.reveal .parent {
+  display: block;
+  overflow: hidden;
+}
+.reveal .parent .child {
+  display: block;
+}
+.parent .child span {
+  display: inline-block;
+}
+#l2 {
+  width: 100%;
+  height: 0;
+  background-color: rgb(185, 185, 185);
+  position: absolute;
+  bottom: 0;
+}
+#l3 {
+  width: 100%;
+  height: 0;
+  background-color: #fcfaf8;
+  position: absolute;
+  bottom: 0;
+}
+#navbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navin {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+#navbar h1 {
+  font-size: 1vw;
+  font-weight: 300;
+  transform: translateY(10px);
+  color: rgb(84, 84, 84);
+}
+#hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(84, 84, 84);
+}
+
+#hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(84, 84, 84);
+  color: rgb(84, 84, 84);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#l3 #r1 {
+  overflow: hidden;
+  height: 35%;
+  margin-top: 30px;
+  padding-left: 60px;
+}
+#l3 #r1 h1 {
+  transform: translateY(80%);
+  font-size: 14vw;
+  font-weight: 500;
+  color: #383838;
+}
+#l3 #r2 {
+  height: 37%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  overflow: hidden;
+}
+#l3 #r2 h1 {
+  transform: translateY(80%);
+  font-size: 14vw;
+  font-weight: 500;
+  color: #383838;
+}
+#r2 svg {
+  height: 10vw;
+}
+path,
+polyline {
+  stroke: rgb(0, 208, 255);
+}
+#first {
+  height: 100%;
+  width: 100%;
+  background-color: #fcfaf8;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#first-div {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+#first-div-1 {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  padding: 10px;
+  height: 100%;
+  width: 30%;
+}
+#first-div-1 h1 {
+  color: black;
+  font-weight: 500;
+}
+#first-div-1 h1 span {
+  font-family: "Mr Dafoe", cursive;
+  color: rgb(0, 208, 255);
+  font-size: 45px;
+}
+#first-div-cards {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card1 {
+  height: 110%;
+  width: 30%;
+  background-color: rgb(207, 207, 207);
+  position: absolute;
+  transform: rotate(-10deg);
+  left: 50%;
+  top: 0%;
+  z-index: 3;
+  border-radius: 30px;
+  background-image: url(/cre-po-bw.png);
+  background-position: center;
+  background-size: cover;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#card2 {
+  height: 110%;
+  width: 30%;
+  background-color: rgb(128, 128, 128);
+  position: absolute;
+  transform: rotate(-7deg);
+  left: 55%;
+  top: 5%;
+  z-index: 4;
+  border-radius: 30px;
+  background-image: url(/Screenshot\ \(561\).png);
+  background-position: center;
+  background-size: cover;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#card3 {
+  height: 110%;
+  width: 30%;
+  background-color: rgb(56, 56, 56);
+  position: absolute;
+  transform: rotate(-3deg);
+  left: 60%;
+  top: 10%;
+  z-index: 5;
+  border-radius: 30px;
+  background-image: url(/form-bw.png);
+  background-position: center;
+  background-size: cover;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#card3:hover {
+  background-image: url(/form.png);
+  background-position: center;
+  background-size: cover;
+}
+#card2:hover {
+  background-image: url(/Screenshot\ \(561\)-b.png);
+  background-position: center;
+  background-size: cover;
+}
+#card1:hover {
+  background-image: url(/cre-po-.png);
+  background-position: center;
+  background-size: cover;
+}
+#second {
+  height: 70%;
+  width: 100%;
+  background-color: #fcfaf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  padding-top: 10%;
+}
+#second-head {
+  height: 30%;
+  width: 100%;
+  padding: 20px;
+}
+
+#second-head h1 {
+  font-size: 10vw;
+  color: #383838;
+  font-weight: 500;
+}
+#second-head h1 span {
+  color: cyan;
+  font-family: "Mr Dafoe", cursive;
+}
+#second-matter {
+  margin-top: 5%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#second-matter span {
+  color: rgb(0, 208, 255);
+  /* font-family: "Mr Dafoe", cursive; */
+}
+#second-matter #sm1 {
+  height: 100%;
+  width: 30%;
+  /* background-color: cyan; */
+}
+#second-matter #sm1 h1 {
+  font-size: 50px;
+}
+#second-matter #sm1 h3 {
+  font-size: 30px;
+}
+#second-matter #sm2 {
+  height: 100%;
+  width: 30%;
+  /* background-color: rgb(132, 0, 255); */
+}
+#second-matter #sm2 h1 {
+  font-size: 50px;
+}
+#second-matter #sm2 h3 {
+  font-size: 30px;
+}
+#third {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #fcfaf8;
+  display: flex;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  padding: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#third-i-1 {
+  position: relative;
+  overflow: hidden;
+  height: 45%;
+  width: 37%;
+  left: 5%;
+  top: 8%;
+  background-color: rgb(158, 169, 169);
+  border-radius: 20px;
+}
+#third-i-1 img {
+  transition: filter cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#third-i-2 {
+  overflow: hidden;
+  position: relative;
+  height: 45%;
+  width: 37%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  top: 38%;
+  left: 21%;
+}
+#third-i-2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#cursor {
+  height: 40%;
+  width: 30%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#cursor1 {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+#cursor2 {
+  position: absolute;
+  opacity: 0;
+  height: 75%;
+  width: 100%;
+
+}
+#cursor2 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#cursor-top {
+  padding: 0 5px;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#cursor-top-circle {
+  height: 90%;
+  width: 12%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+#cursor-top-bar {
+  height: 90%;
+  width: 85%;
+  background-color: #e1e1e1a0;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cursor-top-bar h1 {
+  font-weight: 100;
+  color: #222222;
+}
+#cursor-bottom {
+  margin-top: 10px;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  background-color: #fcfaf826;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#cursor-bottom img {
+  width: 100%;
+  opacity: 0;
+  animation: an 4s ease-in-out infinite;
+  position: absolute;
+  border-radius: 20px;
+}
+#cursor-bottom img:nth-child(2) {
+  animation-delay: 2s;
+}
+#cursor-bottom img:nth-child(3) {
+  animation-delay: 3s;
+}
+#cursor-bottom img:nth-child(4) {
+  animation-delay: 4s;
+}
+#cursor-bottom img:nth-child(5) {
+  animation-delay: 5s;
+}
+
+@keyframes an {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  /* 21%{
+    opacity: 0;
+  } */
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#third-2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #fcfaf8;
+  display: flex;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  padding: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#third-i-1-2 {
+  position: relative;
+  overflow: hidden;
+  height: 45%;
+  width: 37%;
+  top: 8%;
+  left: 5%;
+  background-color: rgb(158, 169, 169);
+  border-radius: 20px;
+}
+#third-i-1-2 img {
+  transition: filter cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#third-i-2-2 {
+  overflow: hidden;
+  position: relative;
+  height: 45%;
+  width: 37%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  left: 21%;
+  top: 38%;
+}
+#third-i-2-2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#cursor-2 {
+  height: 40%;
+  width: 30%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#cursor1-2 {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+#cursor2-2 {
+  position: absolute;
+  opacity: 0;
+  height: 75%;
+  width: 100%;
+
+}
+#cursor2-2 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#cursor-top-2 {
+  padding: 0 5px;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#cursor-top-circle-2 {
+  height: 90%;
+  width: 12%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+#cursor-top-bar-2 {
+  height: 90%;
+  width: 85%;
+  background-color: #e1e1e1a0;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cursor-top-bar-2 h1 {
+  font-weight: 100;
+  color: #222222;
+}
+#cursor-bottom-2 {
+  margin-top: 10px;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  background-color: #fcfaf826;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#cursor-bottom-2 img {
+  width: 100%;
+  opacity: 0;
+  animation: an-2 4s ease-in-out infinite;
+  position: absolute;
+  border-radius: 20px;
+}
+#cursor-bottom-2 img:nth-child(2) {
+  animation-delay: 2s;
+}
+#cursor-bottom-2 img:nth-child(3) {
+  animation-delay: 3s;
+}
+#cursor-bottom-2 img:nth-child(4) {
+  animation-delay: 4s;
+}
+#cursor-bottom-2 img:nth-child(5) {
+  animation-delay: 5s;
+}
+
+@keyframes an-2 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  /* 21%{
+    opacity: 0;
+  } */
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#fourth {
+  height: 100%;
+  width: 100%;
+  background-color: #fcfaf8;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  padding: 5%;
+}
+#fourth-heading {
+  font-size: 70px;
+}
+#fourth-heading span {
+  font-family: "Mr Dafoe", cursive;
+  color: rgb(0, 208, 255);
+}
+#fourth-circle {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dadada;
+ 
+}
+#fourth-circle h1{
+  font-size: 15px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+@media (max-width: 550px) {
+  #main {
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+  
+  }
+  #loading {
+    width: 100%;
+    height: 100%;
+  }
+  #l1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
+  }
+  #l1 h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 9vw;
+    font-family: gilroy;
+    font-weight: 500;
+  }
+  #l1 h1 span {
+    color: rgb(255, 255, 255);
+  }
+  #l1 h1 #pathak {
+    font-family: "Mr Dafoe", cursive;
+    color: rgb(0, 208, 255);
+  }
+  .reveal .parent {
+    display: block;
+    overflow: hidden;
+  }
+  .reveal .parent .child {
+    display: block;
+  }
+  .parent .child span {
+    display: inline-block;
+  }
+  #l2 {
+    width: 100%;
+    height: 0;
+    background-color: rgb(185, 185, 185);
+    position: absolute;
+    bottom: 0;
+  }
+  #l3 {
+    width: 100%;
+    height: 0;
+    background-color: #fcfaf8;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  #navbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+    position: relative;
+  }
+  #navin {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+  #navbar h1 {
+    font-size: 2vw;
+    font-weight: 300;
+    transform: translateY(10px);
+    color: rgb(84, 84, 84);
+  }
+  #hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(84, 84, 84);
+  }
+
+  #hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(84, 84, 84);
+    color: rgb(84, 84, 84);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  #hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  #l3 #r1 {
+    overflow: hidden;
+    height: 35%;
+    margin-top: 30px;
+  
+  }
+  #l3 #r1 h1 {
+    position: relative;
+    left: -20%;
+    transform: translateY(80%);
+    font-size: 25vw;
+    font-weight: 500;
+    color: #383838;
+  }
+  #l3 #r2 {
+    height: 35%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  #l3 #r2 h1 {
+    transform: translateY(80%);
+    font-size: 23vw;
+    position: relative;
+    left: -17%;
+    top: -25%;
+    font-weight: 500;
+    color: #383838;
+  }
+  #r2 svg {
+    position: absolute;
+    height: 35vw;
+    top: 39%;
+    left: 0%;
+  }
+  path,
+  polyline {
+    stroke: rgb(0, 208, 255);
+  }
+  #first {
+    height: 100%;
+    width: 100%;
+    background-color: #fcfaf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+  }
+  #first-div {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  #first-div-1 {
+    display: flex;
+    align-items: center;
+    text-align:justify;
+    height: 50%;
+    width: 100%;
+
+  }
+  #first-div-1 h1 {
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+
+  }
+  #first-div-1 h1 span {
+    font-family: "Mr Dafoe", cursive;
+    color: rgb(0, 208, 255);
+    font-size: 30px;
+  }
+  #first-div-cards {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #card1 {
+    height: 60%;
+    width: 70%;
+    background-color: rgb(207, 207, 207);
+    position: absolute;
+    transform: rotate(-10deg);
+    left: 0%;
+    top: 48%;
+    z-index: 3;
+    border-radius: 30px;
+    background-image: url(/breech.png);
+    background-position: center;
+    background-size: cover;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  #card2 {
+    height: 60%;
+    width: 70%;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+    transform: rotate(-7deg);
+    left: 2.5%;
+    top: 48%;
+    z-index: 4;
+    border-radius: 30px;
+    background-image: url(/kj.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  #card3 {
+    height: 60%;
+    width: 70%;
+    background-color: rgb(56, 56, 56);
+    position: absolute;
+    transform: rotate(-3deg);
+    left: 5%;
+    top: 48%;
+    z-index: 5;
+    border-radius: 30px;
+    background-image: url(/form-bw.png);
+    background-position: center;
+    background-size: cover;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  #card3:hover {
+    background-image: url(/form.png);
+    background-position: center;
+    background-size: cover;
+  }
+  #card2:hover {
+    background-image: url(/kjbandw.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  #card1:hover {
+    background-image: url(/kjbandw.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  #second {
+    height: 30%;
+    width: 100%;
+    background-color: #fcfaf8;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    padding-top: 10%;
+  }
+  #second-head {
+    height: 30%;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #second-head h1 {
+    font-size: 12vw;
+    color: #383838;
+    font-weight: 500;
+  }
+  #second-head h1 span {
+    color: cyan;
+    font-family: "Mr Dafoe", cursive;
+  }
+  #second-matter {
+    margin-top: 5%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #second-matter span {
+    color: rgb(0, 208, 255);
+    /* font-family: "Mr Dafoe", cursive; */
+  }
+  #second-matter #sm1 {
+    height: 100%;
+    width: 30%;
+    /* background-color: cyan; */
+  }
+  #second-matter #sm1 h1 {
+    font-size: 50px;
+  }
+  #second-matter #sm1 h3 {
+    font-size: 30px;
+  }
+  #second-matter #sm2 {
+    height: 100%;
+    width: 30%;
+    /* background-color: rgb(132, 0, 255); */
+  }
+  #second-matter #sm2 h1 {
+    font-size: 50px;
+  }
+  #second-matter #sm2 h3 {
+    font-size: 30px;
+  }
+  #third {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fcfaf8;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    padding: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #third-i-1 {
+    left: 0%;
+    position: relative;
+    overflow: hidden;
+    height: 23%;
+    width: 100%;
+    background-color: rgb(158, 169, 169);
+    border-radius: 10px;
+  }
+  #third-i-1 img {
+    transition: filter cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #third-i-2 {
+    left: 0%;
+    position: relative;
+    overflow: hidden;
+    height: 23%;
+    width: 100%;
+    background-color: rgb(158, 169, 169);
+    border-radius: 10px;
+  }
+  #third-i-2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cursor {
+    display: none;
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  #third-2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fcfaf8;
+    display: flex;
+    flex-direction: column;
+
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    padding: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #third-i-1-2 {
+    left: 0%;
+    position: relative;
+    overflow: hidden;
+    height: 23%;
+    width: 100%;
+    background-color: rgb(158, 169, 169);
+    border-radius: 10px;
+  }
+  #third-i-1-2 img {
+    transition: filter cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #third-i-2-2 {
+    left: 0%;
+    position: relative;
+    overflow: hidden;
+    height: 23%;
+    width: 100%;
+    background-color: rgb(158, 169, 169);
+    border-radius: 10px;
+  }
+  #third-i-2-2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cursor-2 {
+    display: none;
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  #fourth {
+    height: 100%;
+    width: 100%;
+    background-color: #fcfaf8;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    padding: 5%;
+  }
+  #fourth-heading {
+    font-size: 50px;
+  }
+  #fourth-heading span {
+    font-family: "Mr Dafoe", cursive;
+    color: rgb(0, 208, 255);
+  }
+  #fourth-circle {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dadada;
+   
+  }
+  #fourth-circle h1{
+    font-size: 10px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  
+
+
+
+
+
+
+}
