@@ -133,6 +133,7 @@ function cardShow() {
                 document.querySelector("#third-2").style.backgroundColor= "grey";
                 document.querySelector("#second").style.backgroundColor= "grey";
                 document.querySelector("#fourth").style.backgroundColor= "grey";
+                document.querySelector("#third-3").style.backgroundColor= "grey";
             })
             cnt.addEventListener("mouseleave", function (dets) {
                 document.querySelector("#cursor").children[showimg.dataset.index].style.opacity = 0;
@@ -142,6 +143,7 @@ function cardShow() {
                 document.querySelector("#second").style.backgroundColor= "#fcfaf8";
                 document.querySelector("#third-2").style.backgroundColor= "#fcfaf8";
                 document.querySelector("#fourth").style.backgroundColor= "#fcfaf8";
+                document.querySelector("#third-3").style.backgroundColor= "#fcfaf8";
             })
         })
 }
@@ -154,20 +156,56 @@ function cardShow2() {
                 showimg = dets.target;
                 document.querySelector("#cursor-2").style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`
                 showimg.style.filter="grayscale(0)";
-                document.querySelector("#third-2").style.backgroundColor= "grey";
                 document.querySelector("#third").style.backgroundColor= "grey";
+                document.querySelector("#third-2").style.backgroundColor= "grey";
+                document.querySelector("#second").style.backgroundColor= "grey";
                 document.querySelector("#fourth").style.backgroundColor= "grey";
+                document.querySelector("#third-3").style.backgroundColor= "grey";
+                
             })
             cnt.addEventListener("mouseleave", function (dets) {
                 document.querySelector("#cursor-2").children[showimg.dataset.index].style.opacity = 0;
               
                 showimg.style.filter="grayscale(1)";
-                document.querySelector("#third-2").style.backgroundColor="#fff";
-                document.querySelector("#third").style.backgroundColor= "#FCFAF8";
-                document.querySelector("#fourth").style.backgroundColor= "#FCFAF8";
+                document.querySelector("#third").style.backgroundColor="#fcfaf8";
+                document.querySelector("#second").style.backgroundColor= "#fcfaf8";
+                document.querySelector("#third-2").style.backgroundColor= "#fcfaf8";
+                document.querySelector("#fourth").style.backgroundColor= "#fcfaf8";
+                document.querySelector("#third-3").style.backgroundColor= "#fcfaf8";
             })
         })
 }
+
+
+function cardShow3() {
+    document.querySelectorAll(".image-show-3")
+        .forEach(function (cnt) {
+            var showimg;
+            cnt.addEventListener("mousemove", function (dets) {
+                document.querySelector("#cursor-3").children[dets.target.dataset.index].style.opacity = 1;
+                showimg = dets.target;
+                document.querySelector("#cursor-3").style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`
+                showimg.style.filter="grayscale(0)";
+                document.querySelector("#third").style.backgroundColor= "grey";
+                document.querySelector("#third-2").style.backgroundColor= "grey";
+                document.querySelector("#second").style.backgroundColor= "grey";
+                document.querySelector("#fourth").style.backgroundColor= "grey";
+                document.querySelector("#third-3").style.backgroundColor= "grey";
+            })
+            cnt.addEventListener("mouseleave", function (dets) {
+                document.querySelector("#cursor-3").children[showimg.dataset.index].style.opacity = 0;
+              
+                showimg.style.filter="grayscale(1)";
+                document.querySelector("#third").style.backgroundColor="#fcfaf8";
+                document.querySelector("#second").style.backgroundColor= "#fcfaf8";
+                document.querySelector("#third-2").style.backgroundColor= "#fcfaf8";
+                document.querySelector("#fourth").style.backgroundColor= "#fcfaf8";
+                document.querySelector("#third-3").style.backgroundColor= "#fcfaf8";
+            })
+        })
+}
+
+
 function emailme(){
     window.addEventListener("mousemove",function(det){
         document.querySelector("#fourth-circle").style.transform=`translate(${det.clientX*.1}px,${det.clientY*.05}px`;
@@ -191,5 +229,5 @@ cards();
 cardShow();
 
 cardShow2();
-
+cardShow3();
 emailme();
