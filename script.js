@@ -218,6 +218,9 @@ function emailme(){
         document.querySelector("#fourth-circle h1").textContent="EMAIL ME";
     })
 }
+
+
+
 revealtospan();
 
 loadinganimation();
